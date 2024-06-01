@@ -16,9 +16,11 @@
     "graphql": "^16.8.1",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -28,5 +30,8 @@
     "prisma": "^5.14.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
