@@ -3,6 +3,17 @@
 
 Go to the root directory of Project
 
+Install node packages
+
+```bash
+  npm install
+```
+
+And then generate prisma client
+```bash
+  npx prisma generate
+```
+
 for docker build
 
 ```bash
